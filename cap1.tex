@@ -1,0 +1,41 @@
+\chapter{Introducción}
+
+\section{Contexto}
+
+El trabajo de la presente memoria se va a realizar en el Museo de Arte Popular Americano Tomás Lago (MAPA), de la Facultad de Artes de la Universidad de Chile. Se va a trabajar en conjunto con la Directora
+del Museo Constanza Urrutia y con una de las encargadas de ``Investigación y Colecciones'' Paula Cabrera.
+
+Para contextualizar sobre la misión de MAPA y su historia, antes de su inauguración, en la década de 1930 se propiciaron las primeras iniciativas que buscaron rescatar, promover y difundir el desarrollo de las artes populares. Esto conlleva a que en 1943, en el contexto de los 100 años de la Universidad de Chile, se realizara la “Exposición Americana de Artes Populares” que contó con muchas piezas de diversos lugares de Latinoamérica. Luego el Consejo Universitario crea MAPA y se inaugura oficialmente el 20 de diciembre de 1944, donde hasta la fecha continúa su misión de rescatar, investigar y difundir el patrimonio que custodia.
+
+Adicionalmente, la solución que se va a proponer en esta memoria también está enfocada a facilitar la conexión con distintos endpoints, sirviendo así, tanto para la información que pueda estar disponible en sus plataformas, como para facilitar la exportación de datos para entidades externas.
+
+\section{Descripción del Problema y Situación Actual}
+
+El problema que se va a abordar en esta memoria consiste principalmente en la poca utilización o nula existencia de una base de datos centralizada donde se puedan manejar tanto, los datos que manejan internamente dentro de la organización del museo, como los datos que comparten a terceros, particularmente a SURDOC \cite{surdoc}, que es una herramienta informática gubernamental dedicado a registrar y documentar información de los objetos que se encuentran en los museos de Chile.
+
+La necesidad inmediata de realizar esta memoria es facilitar el trabajo de los trabajadores, colaboradores, investigadores, etc. que trabajan con MAPA y también mejorar la capacidad de trabajo para ayudar en la misión de MAPA.
+
+Respecto a la situación actual de MAPA, tienen una colección de alrededor de 6700 piezas, de las cuales deben anotar una serie de datos, como por ejemplo, nombre del objeto, cultura originaria, dimensiones, material, imagen del objeto, etc. (en la página de SURDOC se puede ver en detalle los datos que deben exportar para cada objeto), Estos datos están registrados en planillas Excel, donde distintos equipos dentro de MAPA manejan distintos datos sobre los objetos. Esto dificulta enormemente el acceso a la información de los objetos y el poder exportar estos datos a SURDOC. De aquí nace la necesidad de proponer un sistema de administración de datos que le permite al museo MAPA manejar sus datos y poder exportarlos en forma simple y eficiente.
+
+La exportación de datos a SURDOC se hace ingresando en un formulario digital, que se completa de manera independiente para cada una de las piezas, los datos obligatorios que se solicitan (lo que incluye al menos un registro fotográfico). Una vez se completa y envía el formulario el sistema genera un número de inventario para la pieza en el sistema. SURDOC autoriza a uno de los trabajadores de MAPA para hacer el ingreso de estos datos y le entrega un usuario/perfil para completar esta formulario de varias páginas.
+
+\section{Objetivos}\label{chap:obj}
+
+\subsection*{Objetivo General}\label{sec:obj-g}
+
+El objetivo principal de este proyecto es crear un grafo de conocimiento que pueda responder a la necesidad de todas las personas que utilizan los datos asociados a MAPA, que logre una usabilidad satisfactoria para la contraparte de MAPA y que agregue funcionalidades para reducir el trabajo manual.
+
+\subsection*{Objetivos Específicos}\label{sec:obj-e}
+
+
+\begin{enumerate}
+\item Diseñar un grafo de conocimiento que capture toda la información disponible en MAPA respecto a sus piezas y cumpla con los requisitos de los encargados de MAPA % definir bien el modelo y usar el motor apropiado
+
+%\item disminuir el tiempo que ocupan los usuarios tanto para poder ingresar datos como para recuperar datos 
+
+\item Implementar grafo de conocimiento e ingresar datos existentes de MAPA a nueva BDD.
+
+\item Implementar exportación automática de datos en formatos compatibles con otros sistemas, particularmente para poder hacer envío de estos datos a SURDOC.
+
+\item Implementar una interfaz básica que cumpla con requisitos mínimos para interactuar con la BDD
+\end{enumerate}

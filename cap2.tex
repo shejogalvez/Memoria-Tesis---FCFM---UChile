@@ -1,0 +1,15 @@
+\chapter{Estado del Arte}
+
+\section{Gestores de Bases de Datos}
+
+Entre los distintos modelos de bases de datos, las bases de datos relacionales (RDB) han sido el estándar de facto en la industria durante décadas y siguen siendo ampliamente utilizadas en una variedad de aplicaciones empresariales. Aunque han surgido alternativas, las RDB siguen siendo populares debido a su amplia adopción.
+
+Pero aunque los motores de base de datos, particularmente los más usados, sean principalmente relacionales (RDBMS) \cite{DB_ranking}, también son multi-modelo, es decir, ofrecen funcionalidades para administrar datos como otro modelo de datos u otros tipos de bases de datos, entre estos las bases de datos de grafos.
+
+Las bases de datos de grafos (GDB) han ganado popularidad en los últimos años \cite{Goasduff_2021}, especialmente en aplicaciones donde la estructura y la interconexión de los datos son fundamentales. Aunque aún no han alcanzado la misma adopción masiva que las RDB, su uso está en constante crecimiento, especialmente en áreas como redes sociales, análisis de redes y recomendaciones \cite{aryono2016modelling, DBLP:journals/tgis/ParkC23, 9216015}. 
+
+Las GDB tienen más flexibilidad en las relaciones entre datos, los nodos pueden cambiar de \textit{tag} (equivalente a tabla en RDB), pueden ser eliminados, se pueden agregar atributos a un nodo y no va a afectar otras relaciones, las entidades no tienen un esquema definido, a diferencia de las RDB que se caracterizan por tener un esquema rígido. Permite hacer operaciones de grafos sobre la data (búsqueda de caminos, distancia entre nodos), tiene aplicaciones en datos que se puedan modelar como una red. Es este punto el principal motivo que justifica la decisión de usar un modelo de grafos en vez de algo más convencional como lo es un modelo relacional.
+
+\section{Bases de datos de Grafos (GDB)}
+
+\section{Gestores de GDB}
